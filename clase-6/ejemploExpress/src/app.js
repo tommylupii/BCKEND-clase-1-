@@ -19,7 +19,7 @@ app.get("/usuario", (req, res) => {
     apellido: "Menendez",
     edad: 40,
   };
-  res.json(usuario)
+  res.json(usuario )
 })
 
 app.get("/bienvenida", (req, res) => {

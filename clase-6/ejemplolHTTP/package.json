@@ -1,0 +1,16 @@
+{
+  "name": "clase-6",
+  "version": "1.0.0",
+  "description": "",
+  "main": "ejemploHTTP.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon src/app.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "nodemon": "^3.0.2"
+  }
+}

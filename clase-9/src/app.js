@@ -2,6 +2,7 @@ import express from "express";
 import { engine } from "express-handlebars";
 import { __dirname } from "./utils.js";
 import greetingsRouter from "./routes/greeting.routes.js";
+import usuarioRouter from "./routes/usuarios.routes.js";
 
 const app = express()
 const PORT = 8080
@@ -11,6 +12,7 @@ app.use(express.urlencoded({extended: true}))
 app.use(express.static(__dirname + "/public"))
 
 app.use("/greetings", greetingsRouter)
+app.use("/usuario", usuarioRouter)
 
 app.engine("handlebars", engine())
 app.set("view engine", "handlebars")
